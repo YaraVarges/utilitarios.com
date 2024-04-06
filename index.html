@@ -8,7 +8,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./src/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./src/favicon/favicon-16x16.png">
     <link rel="manifest" href="./src/favicon/site.webmanifest">
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -19,41 +19,24 @@
 
 <body>
     <nav id="sidebar">
-        <div id="sidebar_content">
-            <ul id="side_items">
-                <li class="side-item active">
-                    <a href="#"><i class="fa-solid fa-house"></i>
-                        <span class="item-description">Home</span>
-                    </a>
-                </li>
 
-                <li class="side-item">
-                    <a href="./pages/qrCode/index.html"><i class="fa-solid fa-qrcode"></i>
-                        <span class="item-description">Gerador de QRCode</span>
-                    </a>
-                </li>
-
-                <li class="side-item">
-                    <a href="./pages/password/index.html"><i class="fa-solid fa-lock"></i>
-                        <span class="item-description">
-                            Gerador de Senhas
-                        </span>
-                    </a>
-                </li>
-
-                <li class="side-item">
-                    <a href="./pages/calculator/index.html"><i class="fa-solid fa-calculator"></i>
-                        <span class="item-description">
-                            Calculadora
-                        </span>
-                    </a>
-                </li>
-            </ul>
-
-            <button id="open_btn">
-                <i id="open_btn_icon" class="fa-solid fa-chevron-right"></i>
-            </button>
+        <div id="menu">
+            <div id="menu-bar" onclick="menuOnClick()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+            <nav class="nav" id="nav">
+                <ul>
+                    <li><a href="./index.html"><i class="fa-solid fa-qrcode"></i>Home</a></li>
+                    <li><a href="./pages/qrCode/index.html"><i class="fa-solid fa-qrcode"></i>Gerador de QRCode</a></li>
+                    <li><a href="./pages/password/index.html"><i class="fa-solid fa-lock"></i>Gerador de Senhas</a></li>
+                    <li><a href="./pages/calculator/index.html"><i class="fa-solid fa-calculator"></i>Calculadora</a></li>
+                </ul>
+            </nav>
         </div>
+
+        <div class="menu-bg" id="menu-bg"></div>
     </nav>
 
     <main>

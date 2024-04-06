@@ -10,14 +10,6 @@ main {
     align-items: center;
 }
 
-.side-item.active {
-    background-color: #35317a;
-}
-
-.side-item:hover:not(.active) {
-    background-color: #e3e9f7;
-}
-
 .main {
     display: flex;
     width: 100%;
@@ -38,6 +30,7 @@ main {
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    margin-top: 10px;
     font-size: 15px;
     transition-duration: 0.4s;
     cursor: pointer;
