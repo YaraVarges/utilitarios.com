@@ -114,3 +114,27 @@ input[type="checkbox"] {
     background: #35317a;
     color: #FFF;
 }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    input[type="checkbox"] {
+        height: 20px;
+        width: 20px;
+    }
+
+    input[type="range"] {
+        width: 320px;
+    }
+
+}
+
+@media (min-width: 1024px) and (max-width: 2200px) {
+    input[type="checkbox"] {
+        height: 20px;
+        width: 20px;
+    }
+
+    input[type="range"] {
+        width: 420px;
+    }
+}
