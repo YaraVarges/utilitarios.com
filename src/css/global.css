@@ -4,89 +4,94 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Reddit Mono", sans-serif;
 }
 
-body {
-    display: flex;
-    background-color: #e3e9f7;
-    width: 100%;
-    height: 100vh;
-    flex-direction: column;
-    justify-content: center;
+.bg-indigo {
+    background-color: #35317a !important;
 }
 
-#menu {
-    z-index: 2;
+#nav a {
+    color: #fff;
 }
 
-#menu-bar {
-    width: 30px;
-    height: 30px;
-    margin: 30px 0 20px 20px;
+.navbar-nav>a {
+    color: #fff;
+    margin-left: 40px;
+}
+
+.nav-link>i {
+    margin-right: 5px;
+}
+
+.navbar-logo{
+    margin-left: 40px;
+}
+
+.logo {
+    width: 45px;
+    height: 40px;
+
+}
+
+
+.btn {
+    background-color: #35317a;
+    border: 2px solid #35317a;
+    border-radius: 5px;
+    color: #FFF;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    transition-duration: 0.2s;
     cursor: pointer;
 }
 
-.bar {
-    height: 5px;
+.btn:hover {
+    background-color: #ffffff;
+    color: #35317a;
+    border: 2px solid #35317a;
+}
+
+.input-text {
+    width: 400px;
+    border: 2px solid #35317a;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+
+.section {
+    padding: 20px;
+}
+
+
+.text-home {
+    text-align: justify;
+}
+
+
+
+footer {
+    font-size: 11px;
+    padding: 20px 15px 5px 15px;
+    position: fixed;
+    bottom: 0;
     width: 100%;
-    background-color: #35317a;
-    display: block;
-    border-radius: 5px;
-    transition: 0.3s ease;
+    text-align: center;
 }
 
-#bar1 {
-    transform: translateY(-4px);
-}
-
-#bar3 {
-    transform: translateY(4px);
-}
-
-.nav {
-    transition: 0.3s ease;
-    display: none;
-}
-
-.nav ul {
-    padding: 0 22px;
-}
-
-.nav li {
-    list-style: none;
-    padding: 10px 0;
-}
-
-.nav li a {
-    color: white;
-    font-size: 16px;
+footer a {
     text-decoration: none;
-    display: flex;
-    gap: 12px;
+    color: #0a0a0a;
 }
 
-.nav li a:hover {
-    font-weight: bold;
+footer .copyright {
+    text-align: center;
 }
 
-.menu-bg,
-#menu {
-    top: 0;
-    left: 0;
-    position: absolute;
-}
-
-.menu-bg {
-    z-index: 1;
-    width: 0;
-    height: 0;
-    margin: 20px;
-    background: radial-gradient(circle, #35317a, #35317a);
-    border-radius: 50%;
-    transition: 0.3s ease;
-}
-
+/*
 .change {
     display: block;
 }
@@ -113,11 +118,6 @@ body {
     transform: translate(-60%, -30%);
 }
 
-.main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 .btn {
     background-color: #35317a;
@@ -141,8 +141,6 @@ body {
 }
 
 .input-text {
-    width: 320px;
-    height: 40px;
     border: 2px solid #35317a;
     border-radius: 4px;
     padding-left: 10px;
@@ -340,3 +338,5 @@ footer .copyright {
         height: 50px;
     }
 }
+
+*/
