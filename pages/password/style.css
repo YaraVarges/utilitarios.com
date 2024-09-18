@@ -13,6 +13,12 @@
     align-items: center;
 }
 
+.content-password {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 h1 {
     text-align: center;
@@ -31,7 +37,7 @@ h1 {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    margin-top: 10px;
+    margin-left: 10px;
     font-size: 15px;
     transition-duration: 0.4s;
     cursor: pointer;
@@ -110,4 +116,26 @@ input[type="checkbox"] {
 .settings input[type="checkbox"]:checked::selection {
     background: #35317a;
     color: #FFF;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .section {
+        padding: 10px;
+    }
+
+    .password-length {
+        margin-top: 0;
+    }
+
+    .checkbox {
+        font-size: 14px;
+    }
+
+    .btn {
+        margin-top: 25px;
+    }
 }
