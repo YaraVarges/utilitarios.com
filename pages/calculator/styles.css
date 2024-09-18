@@ -9,6 +9,7 @@
 .main {
     display: flex;
     width: 100%;
+    min-height: 100vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -19,6 +20,28 @@
     flex-direction: column;
     align-items: center;
 }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+
+    border: 2px solid #35317a;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .results {
+    margin-right: 20px !important; 
+  
+  }
+
+  .linha-table {
+    display: none;
+    margin: 1px;
+  }
 
 footer {
     font-size: 10px;

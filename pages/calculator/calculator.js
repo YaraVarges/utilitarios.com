@@ -178,6 +178,10 @@ function pegarDados() {
     const vlrHonorarios = calcularHonorarios(vlrAvisoPrevio, vlrFeriasComTerco, vlrDecimoTerceiro, vlrFGTS, vlrMultaFGTS, vlrSalarioMaternidade, vlrMulta467, vlrMulta477, vlrHorasExtras, vlrDSR, vlrSeguroDesemprego, vlrValeTransporte, vlrAcumuloFuncao, vlrPericulosidade30p, vlrInsalubridade40p, vlrDanoMoral);
     const vlrValorCausa = calcularValorCausa(vlrAvisoPrevio, vlrFeriasComTerco, vlrDecimoTerceiro, vlrFGTS, vlrMultaFGTS, vlrSalarioMaternidade, vlrMulta467, vlrMulta477, vlrHorasExtras, vlrDSR, vlrSeguroDesemprego, vlrValeTransporte, vlrAcumuloFuncao, vlrPericulosidade30p, vlrInsalubridade40p, vlrDanoMoral, vlrHonorarios);
 
+    const linhasResultado = document.querySelectorAll(".linha-table");
+    linhasResultado.forEach(linha => {
+        linha.style.display = "table-row";
+    });
 
     // Exibe os resultados formatados
     document.getElementById("resulSalarioBase").textContent = `Salário Base: R$ ${vlrSalarioBase.toFixed(2)}`;
