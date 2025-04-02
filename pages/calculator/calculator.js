@@ -165,7 +165,8 @@ function pegarDados() {
     const vlrMultaFGTS = calcularMultaFGTS(salarioBase, mesesTrabalhados);
     const vlrSalarioMaternidade = calcularSalarioMaternidade(salarioBase);
     const vlrMulta467 = calcularMulta467(salarioBase, vlrFeriasComTerco, vlrDecimoTerceiro, vlrMultaFGTS);
-    const vlrMulta477 = calcularMulta477(salarioBase);
+    //const vlrMulta477 = calcularMulta477(salarioBase);
+    const vlrMulta477 = document.getElementById('include-multa').checked ? calcularMulta477(salarioBase) || 0 : 0;
     const vlrHoraHoraTrabalhada = calcularValorHoraTrabalhada(salarioBase, jornadaMensalHora);
     const vlrHorasExtras = calcularHorasExtras(vlrHoraHoraTrabalhada, totalHorasExtras);
     const vlrDSR = calcularDSR(totalHoraDSR, vlrHoraHoraTrabalhada);

@@ -21,6 +21,15 @@
     align-items: center;
 }
 
+.form-group {
+        /* align-items: flex-start; */
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+}
+
 table {
     border-collapse: collapse;
     width: 100%;
